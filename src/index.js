@@ -8,10 +8,11 @@ module.exports = function check(str, bracketsConfig) {
       if (ourStack[ourStack.length-1] == bracketsConfig[j][1]) {
         ourStack.pop();
         continue;
-      } 
+      };
+       
       if (ourStr[i] == bracketsConfig[j][0]) {  
-
-        ourStack.push(ourStr[i]);       
+        ourStack.push(ourStr[i]);
+        continue;       
 
       } else if (ourStr[i] == bracketsConfig[j][1]) {
           if( ourStack.length == 0 ||
